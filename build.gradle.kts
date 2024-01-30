@@ -4,6 +4,7 @@ val kotlinVersion: String by project
 val logbackVersion: String by project
 val exposedVersion: String by project
 val postgresVersion: String by project
+val koinVersion: String by project
 
 plugins {
     kotlin("jvm") version "1.9.22"
@@ -42,6 +43,9 @@ dependencies {
     implementation("io.ktor:ktor-server-config-yaml:2.3.7")
 
     implementation("com.zaxxer:HikariCP:3.4.2")
+
+    implementation("io.insert-koin:koin-ktor:$koinVersion")
+    implementation("io.insert-koin:koin-logger-slf4j:$koinVersion")
 
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion")
