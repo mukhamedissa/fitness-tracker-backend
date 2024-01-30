@@ -5,6 +5,7 @@ val logbackVersion: String by project
 val exposedVersion: String by project
 val postgresVersion: String by project
 val koinVersion: String by project
+val kGraphQLVersion: String by project
 
 plugins {
     kotlin("jvm") version "1.9.22"
@@ -46,6 +47,8 @@ dependencies {
 
     implementation("io.insert-koin:koin-ktor:$koinVersion")
     implementation("io.insert-koin:koin-logger-slf4j:$koinVersion")
+    implementation("com.apurebase:kgraphql:$kGraphQLVersion")
+    implementation("com.apurebase:kgraphql-ktor:$kGraphQLVersion")
 
     testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion")

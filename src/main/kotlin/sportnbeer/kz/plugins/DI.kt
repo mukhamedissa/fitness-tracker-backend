@@ -3,7 +3,7 @@ package sportnbeer.kz.plugins
 import io.ktor.server.application.*
 import org.koin.ktor.plugin.Koin
 import org.koin.logger.slf4jLogger
-import sportnbeer.kz.bodyparts.data.di.bodyPartsModules
+import sportnbeer.kz.bodyparts.di.bodyPartsModules
 
 fun Application.configureDi() {
     install(Koin) {

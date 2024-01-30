@@ -12,6 +12,6 @@ fun Application.module() {
     configureDatabases()
     configureHTTP()
     configureSecurity()
-    configureRouting()
     configureDi()
+    configureGraphQl()
 }
